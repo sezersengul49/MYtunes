@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+   --purple500: #281154;
+   --purple300: #270082;
+   --purple600: #1b0058;
+}
+a {
+    text-decoration: none;
+}
+/* header */
+header{
+    background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px 60px;
+    color: white;
+}
+.logo{
+    font-size: 32px;
+    font-weight: 600;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+nav ul li{
+    color: white;
+    border-bottom: 2px solid transparent;
+    transition: border 0.3s;
+}
+nav ul li:hover{
+    border-bottom: 2px solid white;
+}
+
+.hamburger-menu{
+    display: none;
+}
+@media screen and (max-width: 650px) {
+    header{
+        padding: 5px 10px;
+    }
+    .logo{
+        font-size: 25px;
+    }
+    nav ul{
+        gap:10px;
+        display: none;  
+    }
+    .hamburger-menu{
+        font-size: 35px;
+        display: flex;
+    }
+}
+/* section1 */
+.hero-section{
+    background-image: url(hero_image.png);
+    height: 100vh;
+    color: white;
+    display: grid;
+    place-items:center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 0 20px;
+    background-size: cover;
+}
+.hero-section .container{
+display: flex;
+flex-direction: column;
+gap: 30px;
+}
+.hero-section h1{
+    font-size: 95px;
+}
+.hero-section h3{
+    font-size: 40px;
+}
+.hero-section p{
+    font-size: 23px;
+    max-width: 1000px;
+}
+@media screen and(max-width: 950px) {
+    .hero-section .container{
+        gap: 15px; 
+
+    }
+    .hero-section h1{
+        font-size: 35px;
+    }
+    .hero-section h3{
+        font-size: 20px;
+    }
+}
+
+/* music */
+.music-section{
+    padding-top: 50px;
+    background: var(--purple500);
+}
+.music-section .container {
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    padding: 5px 15px;
+    color: white;
+    gap: 30px;
+    
+}
+.primary-btn{
+    background-color: #5219d8;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3;
+    margin-bottom: 10px;
+}
+.primary-btn:hover{
+    transform: scale(0.95);
+    opacity: 0.7;
+}
+.music-section h4{
+    max-width: 900px;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+    .ipad-iphone-img{
+        width: 600px;
+    }
+    
+}
+@media screen and (max-width: 700px) {
+    .ipad-iphone-img{
+        width: 400px;
+    }
+    
+}
+/* about */
+.about-music{
+    padding: 100px 20px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container p{
+    max-width: 900px;
+    margin: 10px;
+}
+.mac-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mac-img img{
+    max-width: 700px;
+}
+
+@media screen and (max-width: 800px) {
+    .mac-img img{
+        width: 550px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .mac-img img{
+        width: 400px;
+    }
+}
+
+/* video */
+.video-section{
+    background-image: url(video.png);
+    min-height:700px;
+    padding: 0 20px;
+    color: white;
+    display: grid;
+    place-items:center;
+    text-align: center;
+}
+.video-section p{
+    max-width: 900px;
+    padding-top: 20px;
+}
+/* card */
+.card-section{
+    display: grid;
+    place-items: center;
+    padding: 0 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.card-section .uzun{
+    max-width: 1000px;
+    
+}
+.card-section button{
+    background-color: #5219d8;
+    cursor: pointer;
+   padding: 5px 5px;
+   border: none;
+}
+.card-section button:hover{
+    transform: scale(0.94);
+    opacity: 0.7;
+}
+/* footer */
+.footer-section{
+    padding: 10px 5px;
+    background: var(--purple600);
+    color: white;
+    
+   
+}
+.list{
+    list-style: none;
+}
+.liste{
+    margin: 10px 0;
+    transition: all 0.3;
+}
+.liste:hover{
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+.footer-section .container{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.haklar{
+    display: flex;
+    background-color:#1b0058;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+}
+
+@media screen and(max-width:750px) {
+    
+    .footer-section .container{
+        flex-direction: column;
+    }
+}
